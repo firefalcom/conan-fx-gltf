@@ -5,7 +5,7 @@ from conans import ConanFile, tools
 
 class FxgltfConan(ConanFile):
     name = 'fx-gltf'
-    version = '1.0.0'
+    version = '1.0.1'
     description = 'A C++14/C++17 header-only library for simple, efficient, and robust serialization/deserialization of glTF 2.0.'
     url = 'https://github.com/birsoyo/conan-fx-gltf'
     homepage = 'https://github.com/jessey-git/fx-gltf'
@@ -22,7 +22,7 @@ class FxgltfConan(ConanFile):
     source_subfolder = "source_subfolder"
 
     def requirements(self):
-        self.requires('json/3.1.2@sesame/stable')
+        self.requires('json/3.4.0@sesame/stable')
 
     def source(self):
         source_url = 'https://github.com/jessey-git/fx-gltf'
