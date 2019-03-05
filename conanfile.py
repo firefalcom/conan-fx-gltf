@@ -22,7 +22,7 @@ class FxgltfConan(ConanFile):
     source_subfolder = "source_subfolder"
 
     def requirements(self):
-        self.requires('json/3.4.0@sesame/stable')
+        self.requires('json/3.5.0@sesame/stable')
 
     def source(self):
         source_url = 'https://github.com/jessey-git/fx-gltf'
